@@ -38,6 +38,12 @@ The program includes basic error checking to ensure that input and output files 
 However, the implementation does assume that the input format is well-formed. For decompression, it expects every character to be followed by one or more digits. If the input is corrupted or doesn't follow this structure, it may result in undefined behavior or runtime errors. Enhancing the error handling for malformed input could make the program more robust.
 
 Another limitation is that the program works well only with text files and is not optimized for binary data. Additionally, the RLE algorithm itself is only effective when the input data contains many repeating characters. For more complex or already compressed data (like PDFs or JPEGs), RLE may not offer any benefit and could even increase the file size.
+OUTPUT
+![Image](https://github.com/user-attachments/assets/053827a5-2cf1-48f6-aae7-e878f60d8e77)
+
+![Image](https://github.com/user-attachments/assets/6b3d6c39-af0b-424a-ab8b-569d2ac250e6)
+
+![Image](https://github.com/user-attachments/assets/b457826f-70a4-4078-ada5-fd0f3f99cd1d)
 
 Conclusion
 This C++ program is a simple yet practical demonstration of Run-Length Encoding, showcasing how a basic compression algorithm can be implemented using fundamental programming concepts such as loops, conditionals, strings, and file I/O. It serves as a great educational tool for understanding the principles of data compression, and it can be extended to include more advanced features, such as binary file support, error handling improvements, or integration into larger systems that require simple compression techniques
